@@ -1,17 +1,23 @@
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.7;
     color: rgba(0,0,0);
-    padding: 0 30px;
+    padding: 3rem;
     background-color: rgba(0,0,0);
+    box-sizing: border-box;
 }
 
 .header {
@@ -39,14 +45,14 @@ body {
     color:rgba(0,0,0);
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .heading-hello {
     display: block;
-    font-size: 45px;
+    font-size: 4.5rem;
     font-weight: 600;
-    letter-spacing: 25px;
+    letter-spacing: 2.5rem;
     animation-name: moveInTop;
     animation-duration: 2s;
     animation-timing-function: ease-out;
@@ -54,9 +60,9 @@ body {
 
 .heading-world {
     display: block;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 600;
-    letter-spacing: 25px;
+    letter-spacing: 2.5rem;
     animation-name: moveInBottom;
     animation-duration: 2s;
     animation-timing-function: ease-out;
@@ -70,11 +76,11 @@ body {
 @keyframes moveInTop {
     0% {
         opacity: 0;
-        transform: translateY(-100px);
+        transform: translateY(-10rem);
     }
 
     80% {
-        transform: translateY(10px)
+        transform: translateY(1rem)
     }
 
     100% {
@@ -86,11 +92,11 @@ body {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(10rem);
     }
 
     80% {
-        transform: translateY(-10px);
+        transform: translateY(-1rem);
     }
 
     100% {
@@ -102,12 +108,12 @@ body {
 @keyframes moveInButton {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
 
     80% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
 
     100% {
@@ -120,16 +126,17 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .2s;
     position: relative;
+    font-size: 1.6rem;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(75,0,130,.3);
+    box-shadow: 0 1rem 2rem rgba(75,0,130,.3);
 }
 
 .btn:active {
@@ -148,7 +155,7 @@ body {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -172,26 +179,47 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgba(255,240,245);
-    border: 10px solid rgba(75,0,130,.9);
-    margin-right: 30px;
+    border: 1rem solid rgba(75,0,130,.9);
+    margin-right: 3rem;
 }
 
 .bio-photo {
-    padding: 10px;
+    padding: 1rem;
 }
 
 .bio-description {
     width: 70%;
-    padding: 20px 30px 20px 20px;
-    font-size: 15px;
+    padding: 2rem 3rem 2rem 2rem;
+    font-size: 1.5rem;
 }
 
 .bio-contact{
-    font-size: 14px;
-    padding-top: 20px;
+    font-size: 1.4rem;
+    padding-top: 2rem;
 }
 
 .renee-photo {
-    width: 320px;
-    padding: 10px;
+    width: 32rem;
+    padding: 1rem;
 }
+
+/*.see-projects {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255,192,203,.9),
+        rgba(75,0,130,.9)
+        );
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    display: flex;
+}
+
+.what-I-do {
+    display: block;
+}
+
+.click-for-projects {
+    display: block;
+}*/
