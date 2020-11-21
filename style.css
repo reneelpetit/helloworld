@@ -182,10 +182,12 @@ body {
 
 .bio-description {
     width: 70%;
-    padding: 20px;
+    padding: 20px 30px 20px 20px;
+    font-size: 15px;
 }
 
 .bio-contact{
+    font-size: 14px;
     padding-top: 20px;
 }
 
