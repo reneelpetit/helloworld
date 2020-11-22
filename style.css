@@ -191,6 +191,7 @@ body {
     width: 70%;
     padding: 2rem 3rem 2rem 2rem;
     font-size: 1.5rem;
+    text-align: justify;
 }
 
 .bio-contact{
